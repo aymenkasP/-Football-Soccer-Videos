@@ -20,7 +20,7 @@
     border-radius: 5%;
 }
 
-p {
+.card p {
     background-color: rgb(164, 247, 86);
     font-size: 0.9rem;
     border-radius: 2%;

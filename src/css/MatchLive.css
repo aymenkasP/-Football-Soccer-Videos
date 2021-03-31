@@ -1,0 +1,21 @@
+
+.video {
+    display: flex;
+   flex-direction: column;
+   justify-content:center ;
+   height: 900px;
+   align-items: center;
+   
+    background-color: rgb(200, 255, 0);
+}
+
+iframe {
+    border: none;
+    width: 1000px;
+    height: 100%;
+    max-width: 100% ;
+}
+
+.frm  {
+   height: 100%;
+}
