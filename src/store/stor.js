@@ -1,12 +1,11 @@
 import { action, createStore } from "easy-peasy";
 
 const stor = createStore({
-    LiveInfo: [],
+    LiveInfo: "",
     addInfo : action((state,payload) => {
-        state.LiveInfo = [...payload]
+        state.LiveInfo =payload
     } )
     
   });
-
 
   export default stor

@@ -8,15 +8,19 @@ function Card({info}) {
   const addInfo = useStoreActions((actions) => actions.addInfo);
   const open = useHistory()
   function openLive(){
+    
+  
     addInfo(info)
+    console.log(info)
+    
+    
+    console.log('card clicd')
       open.push('/live')
   }
    
     return (
         <div className='card' 
         onClick ={()=> {
-
-
           openLive()
         }}
         >

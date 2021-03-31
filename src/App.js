@@ -2,7 +2,7 @@ import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import MatchesCard from './components/MatchesCard';
-import MatchLive from './components/MatchesCard';
+import MatchLive from './components/MatchLive';
 import { StoreProvider } from 'easy-peasy';
 import stor from './store/stor'
 import {
@@ -21,7 +21,7 @@ function App() {
     const getData = async () => {
       const data = await axios('https://www.scorebat.com/video-api/v1/')
 
-      console.log(data.data)
+      
       setData(data.data)
     }
 
@@ -32,16 +32,20 @@ function App() {
     <StoreProvider store={stor} >
       <div className="App">
       <Router>
-        <Switch>
-        <Route path="/" >
-         <MatchesCard data={Data} /> 
-         </Route>
-         <Route path="/live" >
-         <MatchLive data={Data} /> 
-         </Route>
+       
+        <Route path="/live" component={MatchLive}   />
+         
+         
+
+        <Route    path="/" exact   >
+          <MatchesCard  data={Data} />
+        </Route>
+         
+        
+         
 
 
-        </Switch>
+        
         
       </Router>
 
