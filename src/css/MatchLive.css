@@ -3,10 +3,17 @@
     display: flex;
    flex-direction: column;
    justify-content:center ;
-   height: 900px;
+   height: 100vh;
    align-items: center;
-   
-    background-color: rgb(200, 255, 0);
+}
+
+.video_info {
+    background-color: whitesmoke;
+    text-align: center;
+    position: fixed;
+    padding: 12px;
+    top : -17px;
+    width: 100%;
 }
 
 iframe {
@@ -14,8 +21,9 @@ iframe {
     width: 1000px;
     height: 100%;
     max-width: 100% ;
+    margin-top: 77px;
 }
 
 .frm  {
-   height: 100%;
+   height: 100%
 }

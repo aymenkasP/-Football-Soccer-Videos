@@ -7,7 +7,7 @@ export default function MatchLive() {
     
     return (
         <div className="video">
-            <p> {info.title} </p>
+            <p className='video_info'> {info.title} </p>
             
                <div className='frm' >
                <iframe className='frame' src={emb} >

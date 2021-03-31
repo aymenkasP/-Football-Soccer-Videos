@@ -3,13 +3,15 @@
     flex-direction: column;
     margin: 10px;
     padding: 7px  ;
-    width: 400px;
+    width: 300px;
     height: auto;
     text-align: center;
-
-    overflow:hidden
-    
-
+    border: 5px solid rgb(105, 105, 105);
+    overflow:hidden;
+    padding: 12px;
+    justify-content: space-between;
+    border-radius: 12px;
+    user-select: none;
    
 
 }
@@ -21,8 +23,23 @@
 }
 
 .card p {
-    background-color: rgb(164, 247, 86);
-    font-size: 0.9rem;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
     border-radius: 2%;
+    background-color: rgb(231, 230, 230);
+    
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+
+.card:hover {
+    border-color: black;
+    cursor: pointer;
+   
     
 }

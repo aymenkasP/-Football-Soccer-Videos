@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Header from './components/Header';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <StoreProvider store={stor} >
       <div className="App">
+        <Header />
       <Router>
        
         <Route path="/live" component={MatchLive}   />
