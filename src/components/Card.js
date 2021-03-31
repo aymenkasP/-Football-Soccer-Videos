@@ -1,11 +1,25 @@
+import { useStoreActions } from 'easy-peasy';
 import React from 'react'
+import { useHistory } from 'react-router'
 import '../css/card.css'
 
 function Card({info}) {
-
+  
+  const addInfo = useStoreActions((actions) => actions.addInfo);
+  const open = useHistory()
+  function openLive(){
+    addInfo(info)
+      open.push('/live')
+  }
    
     return (
-        <div className='card'>
+        <div className='card' 
+        onClick ={()=> {
+
+
+          openLive()
+        }}
+        >
 
       
         <p className="title">
@@ -14,9 +28,6 @@ function Card({info}) {
             <div className='card_img'>
               <img src ={info.thumbnail} alt ={info.title} />   
             </div>
-
-
-
                 {
                   //match info  
                 }
