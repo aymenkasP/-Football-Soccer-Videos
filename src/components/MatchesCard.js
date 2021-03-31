@@ -6,16 +6,10 @@ function MatchesCard({data}) {
     return (
         <div className="cards container">
 
-        {
-            data.map((item) => {
-               // console.log(item)
-               return  <Card  key={item.titel} 
-                        info = {item}
-                 />
-            })
-        }
+        { data.map((item) => {
+               return  <Card  key={item.title}  info = {item} />
+            })}
        
-            
         </div>
     )
 }
