@@ -1,5 +1,5 @@
 
-.video {
+.video_page {
     display: flex;
    flex-direction: column;
    justify-content:center ;
@@ -8,12 +8,26 @@
 }
 
 .video_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: whitesmoke;
     text-align: center;
-    position: fixed;
     padding: 12px;
-    top : -17px;
     width: 100%;
+}
+
+.video_info span {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    width: 100px;
+
+}
+.video_info span:hover {
+    background-color: yellow;
+    cursor: pointer;
+    color: rgb(48, 48, 184);
 }
 
 iframe {
@@ -21,9 +35,11 @@ iframe {
     width: 1000px;
     height: 100%;
     max-width: 100% ;
-    margin-top: 77px;
+    max-height: 800px;
+    
 }
 
 .frm  {
-   height: 100%
+   height: 100%;
+  
 }

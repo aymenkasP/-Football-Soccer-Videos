@@ -1,0 +1,7 @@
+.heder {
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+}

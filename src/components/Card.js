@@ -9,12 +9,8 @@ function Card({info}) {
   const open = useHistory()
   function openLive(){
     
-  
     addInfo(info)
     console.log(info)
-    
-    
-    console.log('card clicd')
       open.push('/live')
   }
    
@@ -32,10 +28,7 @@ function Card({info}) {
             <div className='card_img'>
               <img src ={info.thumbnail} alt ={info.title} />   
             </div>
-                {
-                  //match info  
-                }
-
+                
            <div className='match_info'>
            <p>{info.date}</p>
              <p> {info.competition.name} </p>
